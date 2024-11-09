@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuro.ai</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.nuro.ai/_nuxt/icons/icon_64x64.bccc78.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <video
+        class="m"
+        autoplay
+        muted
+        loop
+        src="vedios/MINIANTHEM_4K_compressed.mp4"
+      ></video>
+    </div>
+    <div id="amn">
+      <div class="main">
+        <div class="video">
+          <video
+            autoplay
+            muted
+            loop
+            src="vedios/MINIANTHEM_4K_compressed.mp4"
+          ></video>
+          <div
+            class="hal"
+            id="toggle"
+            style="
+              width: 100%;
+              border-radius: 10px;
+              margin: auto;
+              height: 100vh !important;
+              background-color: black;
+              inset: 0;
+              z-index: 999;
+              position: fixed;
+              display: none;
+            "
+          >
+            <div class="navbar">
+              <div class="menu">
+                <div
+                  class="close-button"
+                  style="
+                    color: white !important;
+
+                    margin-left: -20px !important;
+                    margin-top: 50px !important;
+                    font-size: 25px;
+                  "
+                >
+                  ✕
+                </div>
+                <a href="#" class="slide" style="margin-top: 20px"
+                  >Technology</a
+                >
+                <a href="#" class="slide">Nuro Driver</a>
+                <a href="#" class="slide">Nuro AI Platform</a>
+                <a href="#" class="slide">Solutions</a>
+                <a href="#" class="slide">Company</a>
+                <a href="#" class="slide">Careers</a>
+                <a href="#" class="slide">Safety</a>
+              </div>
+              <div class="follow" style="color: black !important">
+                <p style="color: white !important">Follow</p>
+                <a href="#" class="slide">LinkedIn</a>
+                <a href="#" class="slide">X</a>
+                <a href="#" class="slide">Instagram</a>
+                <a href="#" class="slide">YouTube</a>
+                <a href="#" class="slide">Facebook</a>
+              </div>
+              <div class="news">
+                <div class="news-text" style="margin-left: 50px">
+                  <p class="slide" class="date" style="padding-top: 30px">
+                    The Verge, September 11, 2024
+                  </p>
+                  <p class="slide" style="color: white !important">
+                    Nuro is branching out into robotaxis and personally owned
+                    autonomous vehicles
+                  </p>
+                </div>
+                <div
+                  style="margin-right: 110px; margin-top: -300px !important"
+                  class="news-image"
+                  alt="Image of autonomous vehicles in a city environment"
+                >
+                  <video
+                    style="
+                      width: 200px;
+                      height: 100px;
+                      border-radius: 10px !important;
+                    "
+                    autoplay
+                    muted
+                    loop
+                    src="vedios/MINIANTHEM_4K_compressed.mp4"
+                  ></video>
+                </div>
+              </div>
+            </div>
+            <div class="logo">nuro</div>
+          </div>
+          <div class="icon">
+            <div class="info" id="menu">
+              <a href="#" class="ma you"
+                ><div class="me"></div>
+                <div class="mee"></div
+              ></a>
+              <a href="#" class="ma" style="padding-left: 40px">Technology</a>
+              <a href="#" class="ma">Solutions</a>
+              <a href="#" class="ma">Company</a>
+              <a href="#" class="ma">Safety</a>
+              <a href="#" class="ma">Careers</a>
+            </div>
+            <div class="logo">
+              <img
+                src="assets/a/asset 14.svg"
+                alt=""
+                style="filter: brightness(0) invert(1)"
+              />
+            </div>
+          </div>
+          <div class="heading">
+            <h1>Autonomy for all.</h1>
+            <h1>All roads,all rides.</h1>
+            <p>
+              Cutting-edge AI-first autonomy <br />
+              for automotive and mobility applications.
+            </p>
+
+            <div class="icon-container">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="card">
+              <video
+                class="monu"
+                muted
+                loop
+                autoplay
+                src="vedios/freecompress-Nuro_Autonomy-for-all_2024-09-10-153125_qoop (1).mp4"
+              ></video>
+              <i class="fa-solid fa-play"></i>
+              <div class="e">
+                <h1 class="dave">Dave Ferguson on the future of Nuro.</h1>
+                <h2 class="time">01:38</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gsap">
+        <div class="gsap-video">
+          <video
+            id="myVideo"
+            src="vedios/MINIANTHEM_4K_compressed.mp4"
+            muted
+          ></video>
+
+          <!-- Add muted for autoplay permission -->
+        </div>
+      </div>
+      <div
+        class="card-section"
+        style="display: flex; flex-wrap: nowrap; flex-direction: row"
+      >
+        <div class="cards">
+          <h1>Passenger Mobility</h1>
+          <h2>Mobility Services</h2>
+        </div>
+        <div class="cards2" style="width: 500px">
+          <h1>Personally Owned Vehicles</h1>
+          <h2>Automotive</h2>
+        </div>
+        <div class="cards3">
+          <h1>Logistics</h1>
+          <h2>Mobility Services</h2>
+        </div>
+      </div>
+      <div class="autonomy">
+        <div class="auto"><h1>Autonomy for mobility applications.</h1></div>
+        <div class="offer">
+          <p class="p">
+            Nuro offers automotive companies and mobility platforms the
+            opportunity to leverage our world-class L4 autonomous technology.
+            Our cutting-edge AI solutions are designed to be adaptable across
+            various vehicle platforms.
+          </p>
+          <button class="ex">Explore Solutions</button>
+        </div>
+      </div>
+      <div class="safty">
+        <h1 class="saftyy">Safety at every turn.</h1>
+        <p class="safty2">
+          Safety underpins every part of our company, from hardware and software
+          to <br />
+          testing, systems engineering, and operations.
+        </p>
+        <button class="exx">View Safety</button>
+      </div>
+      <div class="safty truck">
+        <h1 class="saftyy">
+          8 years of <br />
+          autonomy innovation.
+        </h1>
+        <p class="safty2">
+          The Nuro Driver™ has been deployed across seven vehicle platforms.
+          We’ve <br />
+          refined our system on the road, using our fleet and partner platforms,
+          such as <br />
+          passenger vehicles and long-haul trucks. This expertise is propelling
+          us toward <br />
+          an even more innovative future, where our technology will transform
+          the way <br />goods and people move.
+        </p>
+        <button class="exx">About Nuro</button>
+      </div>
+      <div class="safty bring">
+        <h1 class="saftyy">Safety at every turn.</h1>
+        <p class="safty2">
+          Safety underpins every part of our company, from hardware and software
+          to <br />
+          testing, systems engineering, and operations.
+        </p>
+        <button class="exx">Contact Nuro</button>
+      </div>
+      <div class="news">
+        <h1>Latest news.</h1>
+
+        <div class="news-cards">
+          <div class="first">
+            <img
+              src="https://nuro.imgix.net/Visual-Asset-1_1_2024-09-11-150035_vbpe.jpg?w=1920&fit=max&auto=format&q=45"
+              alt="#"
+            />
+            <h3 class="the" style="font-size: 15px; font-weight: normal">
+              The Vigea 90:12:1234
+            </h3>
+            <h2>
+              Nuro is a bracnh personatlity <br />
+              personatlity owned personatlity <br />
+              hello Antonoyms personatlity ...
+            </h2>
+          </div>
+          <div class="first">
+            <img
+              src="https://nuro.imgix.net/Visual-Asset-1_1_2024-09-11-150131_ysvn.jpg?w=1920&fit=max&auto=format&q=45"
+              alt="#"
+            />
+            <h3 class="the" style="font-size: 15px; font-weight: normal">
+              The Vigea 90:12:1234
+            </h3>
+            <h2>
+              Nuro is a bracnh personatlity <br />
+              personatlity owned personatlity <br />
+              hello Antonoyms personatlity ...
+            </h2>
+          </div>
+          <div class="first">
+            <img
+              src="https://nuro.imgix.net/NVDIA.jpg?w=1920&fit=max&auto=format&q=45"
+              alt="#"
+            />
+            <h3 class="the" style="font-size: 15px; font-weight: normal">
+              The Vigea 90:12:1234
+            </h3>
+            <h2>
+              Nuro is a bracnh personatlity <br />
+              personatlity owned personatlity <br />
+              hello Antonoyms personatlity ...
+            </h2>
+          </div>
+          <div class="first">
+            <img
+              src="https://nuro.imgix.net/Visual-Asset-1_1-1_2024-09-09-231411_hiyh.jpg?w=1920&fit=max&auto=format&q=45"
+              alt="#"
+            />
+            <h3 class="the" style="font-size: 15px; font-weight: normal">
+              The Vigea 90:12:1234
+            </h3>
+            <h2>
+              Nuro is a bracnh personatlity <br />
+              personatlity owned personatlity <br />
+              hello Antonoyms personatlity ...
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="explore-more">
+        <div class="news">
+          <h1>Explore More</h1>
+        </div>
+        <div class="flex" style="display: flex">
+          <div class="current">
+            <h1>Current Roles.</h1>
+            <h2>Careers</h2>
+            <div class="border">
+              <h1 class="bor" style="color: black">
+                Autonomous Vehicle Operator <br />
+                Santa Clara PM-Shift
+              </h1>
+
+              <h1 class="bor" style="color: black">
+                <span><i class="fas fa-arrow-right"></i></span>
+                Autonomous Vehicle Operator <br />
+                Santa Clara PM-Shift
+              </h1>
+              <h1 class="bor" style="color: black">
+                <span><i class="fas fa-arrow-right"></i></span>
+                Autonomous Vehicle Operator <br />
+                Santa Clara PM-Shift
+              </h1>
+              <h1 class="bor" style="color: black">
+                <span><i class="fas fa-arrow-right"></i></span>
+                Autonomous Vehicle Operator <br />
+                Santa Clara PM-Shift
+              </h1>
+              <h1 class="bor man" style="color: black">
+                <span><i class="fas fa-arrow-right"></i></span>
+                Autonomous Vehicle Operator <br />
+                Santa Clara PM-Shift
+              </h1>
+            </div>
+            <button class="exx" style="background-color: black; color: white">
+              View All
+            </button>
+          </div>
+          <div class="mam">
+            <h1>
+              Driving the future <br />
+              of autonomy.
+            </h1>
+            <h2>Company</h2>
+            <button class="exx" style="background-color: black; color: white">
+              About Nuro
+            </button>
+          </div>
+          <div class="txt">
+            <h1>
+              Learn about LAMBDA, Nuro’s Multimodal Large Language Model (MLLM)
+              that performs question answering as part of the onboard autonomy
+              stack.
+            </h1>
+            <h2>AI Research @ Nuro</h2>
+            <button class="exx" style="background-color: black; color: white">
+              Read Blog
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="explore">
+        <div class="news hun">
+          <h1>Explore More</h1>
+        </div>
+        <div class="flex" style="display: flex">
+          <div class="txt re">
+            <h1>1M+</h1>
+            <h2>Safety</h2>
+            <p>Autonomous miles driven with zero at-fault incidents.</p>
+          </div>
+          <div class="current ree">
+            <h1>Current Roles.</h1>
+            <h2>Careers</h2>
+            <div class="border borderr">
+              <h1 class="bor" style="color: black">
+                Autonomous Vehicle Operator <br />
+                Santa Clara PM-Shift
+              </h1>
+
+              <h1 class="bor" style="color: black">
+                Autonomous Vehicle Operator <br />
+                Santa Clara PM-Shift
+              </h1>
+              <h1 class="bor" style="color: black">
+                Autonomous Vehicle Operator <br />
+                Santa Clara PM-Shift
+              </h1>
+            </div>
+            <button
+              class="exx"
+              style="background-color: black; color: white; margin-top: 50px"
+            >
+              View All
+            </button>
+          </div>
+
+          <div class="youu">
+            <video
+              autoplay
+              muted
+              loop
+              class="background-video"
+              autoplay
+              loop
+              muted
+              playsinline
+            >
+              <source
+                src="https://nuro.sfo3.digitaloceanspaces.com/Wow-Autonomy-Aggressive-driver-no-title_2024-01-25-210507_jngu.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <h1>
+              Driving the future <br />
+              of autonomy.
+            </h1>
+            <h2>Company</h2>
+            <button class="exx" style="background-color: black; color: white">
+              About Nuro
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="aman">
+        <div class="footer">
+          <div class="footer-child">
+            <h1>Technology</h1>
+            <h1>Nuro Driver</h1>
+            <h1>Nuro Ai Plateform</h1>
+            <h1>Solutions</h1>
+            <h1>Saftey</h1>
+          </div>
+          <div class="footer-child">
+            <h1>Company</h1>
+            <h1>Press</h1>
+            <h1>Carrers</h1>
+            <h1>Bolog</h1>
+            <h1>First Response</h1>
+            <h1>Contact</h1>
+            <p style="padding-left: 50px; padding-top: 20px; opacity: 0.4">
+              Follow
+            </p>
+            <h1>LinkedIn</h1>
+            <h1>X</h1>
+            <h1>Instagram</h1>
+            <h1>Youtube</h1>
+            <h1>Facebook</h1>
+          </div>
+          <div class="footer-child">
+            <div class="input" style="display: flex; position: relative">
+              <h1 style="margin-right: 10px">Stay Connected</h1>
+              <input
+                placeholder="Guys"
+                style="
+                  font-size: 15px;
+                  width: 340px;
+                  border-radius: 30px;
+                  background-color: transparent;
+                  color: white;
+                "
+                type="text"
+                class="t"
+              />
+            </div>
+            <button
+              class="exx submit"
+              style="background-color: white; color: black; position: absolute"
+            >
+              Submit Now
+            </button>
+          </div>
+        </div>
+        <div class="flex" style="display: flex">
+          <div class="lo" style="background-color: black">
+            <img
+              src="assets/a/asset 14.svg"
+              alt=""
+              style="filter: brightness(0) invert(1)"
+            />
+          </div>
+          <div class="privacy" style="display: flex">
+            <h1
+              style="
+                color: white;
+                font-size: 14px;
+                padding-left: 100px;
+                padding-top: 35px;
+                opacity: 0.5;
+                font-family: Suisse, sans-serif !important;
+              "
+            >
+              Privacy Policy .
+            </h1>
+            <h1
+              style="
+                color: white;
+                font-size: 14px;
+                padding-left: 20px;
+                padding-top: 35px;
+                opacity: 0.5;
+                font-family: Suisse, sans-serif !important;
+              "
+            >
+              Use Of Terms .
+            </h1>
+            <h1
+              style="
+                color: white;
+                font-size: 14px;
+                padding-left: 20px;
+                padding-top: 35px;
+                opacity: 0.5;
+              "
+            >
+              Legel .
+            </h1>
+          </div>
+          <div class="inc" style="display: flex">
+            <h1
+              style="
+                color: white;
+                font-size: 14px;
+                padding-left: 640px;
+                padding-top: 38px;
+                opacity: 0.5;
+                font-family: Suisse, sans-serif !important;
+              "
+            >
+              ©
+            </h1>
+            <h1
+              style="
+                color: white;
+                font-size: 14px;
+                padding-left: 10px;
+                padding-top: 38px;
+                opacity: 0.5;
+                font-family: Suisse, sans-serif !important;
+              "
+            >
+              2024 Nuro,
+            </h1>
+            <h1
+              style="
+                color: white;
+                font-size: 14px;
+                padding-left: 10px;
+                padding-top: 38px;
+                opacity: 0.5;
+                font-family: Suisse, sans-serif !important;
+              "
+            >
+              Inc.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="toggle.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

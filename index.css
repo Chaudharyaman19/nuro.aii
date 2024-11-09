@@ -1,0 +1,1019 @@
+.main {
+  background: #fff;
+}
+
+.gsap {
+  height: 600px;
+  width: 96%;
+  background-color: lightgray;
+  margin: auto;
+  border-radius: 30px;
+  margin-top: 30px;
+  overflow: hidden; /* Keeps .gsap-video within bounds */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gsap-video {
+  overflow: hidden; /* Ensure any overflow is hidden */
+}
+.gsap-video video {
+  width: 100%; /* Make video take full width of its container */
+  height: 100%; /* Make video take full height of its container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+.gsap-video {
+  width: 200px; /* Initial width */
+  height: 100px; /* Initial height */
+  background-color: white;
+  border-radius: 50px; /* Capsule shape */
+  opacity: 0.5; /* Semi-transparent to start */
+  transform: rotate(360deg); /* Start with no rotation */
+  transition: all 0.3s ease;
+}
+
+.video {
+  height: 570px;
+  width: 96%;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+}
+.video video {
+  height: 570px;
+  border-radius: 30px;
+  width: 100%;
+  object-fit: cover;
+
+  position: absolute;
+}
+
+.icon {
+  padding: 0px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  height: 100px;
+  color: #fff !important;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  display: flex;
+  gap: 20px;
+}
+.ma {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 5px;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: "arial";
+}
+.me {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  font-weight: normal;
+  margin-top: 6px;
+  margin-left: 2.5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.mee {
+  width: 20px;
+  height: 1px;
+  background-color: rgb(27, 26, 26);
+  font-weight: normal;
+  margin-top: 5px;
+  margin-left: 2.5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.you {
+  width: 25px;
+  height: 20px;
+  margin-top: 2px;
+  background-color: white;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+.logo img {
+  width: 75px;
+  height: 50px;
+}
+.heading {
+  width: 500px;
+  padding: 20px 35px;
+  color: white;
+  font-size: 24px;
+  line-height: 18px;
+  position: relative;
+}
+.heading h1 {
+  font-family: Suisse, sans-serif;
+  font-weight: normal;
+}
+.heading p {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: Suisse, sans-serif;
+  font-weight: normal;
+  position: relative;
+}
+.fa-solid {
+  height: 20px;
+  font-size: 17px;
+  padding-top: 2px;
+  padding-left: 2px; /* Adjust padding as needed */
+}
+
+.icon-container {
+  height: 50px; /* Set to your desired height */
+  width: 50px; /* Set to your desired width */
+  display: flex;
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  border: 1px solid white; /* Optional, for visual purposes */
+  border-radius: 50%; /* Optional, for circular effect */
+  transition: 0.6s ease-in-out;
+}
+
+.icon-container:hover {
+  animation: blink 1s infinite; /* Apply blinking animation */
+  color: black;
+  background-color: white;
+  border: 1px solid white; /* Optional, for visual purposes */
+  border-radius: 50%; /* Optional, for circular effect */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    opacity: 0; /* Invisible */
+    transform: scale(0.9); /* Slightly smaller */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Normal size */
+  }
+}
+.card {
+  width: 210px;
+  height: 230px;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(35, 35, 35, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(100px);
+  position: absolute;
+  left: 960px; /* Aligns to the right side */
+  bottom: 0; /* Aligns to the bottom of the viewport */
+}
+.card video {
+  position: relative;
+  width: 190px;
+  height: 130px;
+  border-radius: 15px;
+  margin-left: 9px;
+  margin-top: 10px;
+}
+.card .time {
+  font-size: 12px;
+  padding-left: 12px;
+  text-align: start;
+  font-family: Suisse, sans-serif;
+}
+.card .dave {
+  font-size: 16px;
+  font-family: Suisse, sans-serif;
+  padding-left: 12px;
+  text-align: start;
+}
+.card .fa-solid {
+  font-size: 9px;
+  height: 20px; /* Set to your desired height */
+  width: 20px;
+  position: absolute;
+  top: 46%;
+  left: 20px;
+  display: flex;
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  border: 1px solid white; /* Optional, for visual purposes */
+  border-radius: 50%; /* Optional, for circular effect */
+  transition: 0.6s ease-in-out;
+}
+.card .fa-solid:hover {
+  animation: blink 1s infinite; /* Apply blinking animation */
+  color: black;
+  background-color: white; /* Change background on hover */
+  border: 1px solid white; /* Keep the border */
+  border-radius: 50%; /* Keep the circular effect */
+}
+@keyframes blink {
+  0% {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    opacity: 0; /* Invisible */
+    transform: scale(0.9); /* Slightly smaller */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Normal size */
+  }
+}
+
+.cards {
+  width: 380px;
+  background-color: rgba(35, 35, 35, 0.1);
+  height: 500px;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.cards {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-image: url("assets/a/asset\ 4.jpeg");
+}
+.cards2 {
+  width: 380px !important;
+  background-color: rgba(35, 35, 35, 0.1);
+  height: 500px;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-image: url("assets/a/asset\ 5.jpeg");
+}
+.cards3 {
+  width: 380px;
+  background-color: rgba(35, 35, 35, 0.1);
+  height: 500px;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-image: url("assets/a/asset\ 6.jpeg");
+}
+
+.cards h1 {
+  font-size: 29px;
+  padding-top: 30px;
+  color: white;
+  font-weight: normal;
+  font-family: Suisse, sans-serif;
+  padding-left: 28px;
+}
+.cards h2 {
+  margin-top: -10px;
+  font-size: 13px;
+  color: white;
+  font-family: Suisse, sans-serif;
+  padding-left: 28px;
+}
+
+.cards2 h1 {
+  font-weight: normal;
+  font-size: 29px;
+  padding-top: 30px;
+  color: white;
+  font-family: Suisse, sans-serif;
+  padding-left: 10px;
+}
+.cards2 h2 {
+  margin-top: -10px;
+  font-size: 13px;
+  color: white;
+  font-family: Suisse, sans-serif;
+  padding-left: 28px;
+}
+.cards3 h1 {
+  font-size: 29px;
+  font-weight: normal;
+  padding-top: 30px;
+  color: white;
+  font-family: Suisse, sans-serif;
+  padding-left: 28px;
+}
+.cards3 h2 {
+  margin-top: -10px;
+  font-size: 13px;
+  color: white;
+  font-family: Suisse, sans-serif;
+  padding-left: 28px;
+}
+.autonomy {
+  display: flex;
+  justify-content: space-between;
+}
+.auto {
+  font-size: 18px;
+  width: 40%;
+  padding-top: 30px;
+  color: black;
+  padding-left: 25px;
+  font-family: Suisse, sans-serif;
+}
+.auto h1 {
+  font-weight: 100 !important;
+}
+.offer {
+  font-size: 19px;
+  width: 50%;
+  padding-top: 30px;
+  color: black;
+}
+.p {
+  padding-left: 200px !important;
+  font-size: 20px;
+  font-weight: 100 !important;
+  padding-right: 10px;
+  font-family: Suisse, sans-serif !important;
+}
+.ex {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: Suisse, sans-serif !important;
+  margin-left: 200px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+.ex:hover {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: Suisse, sans-serif !important;
+  margin-left: 200px;
+  color: white;
+  background-color: blue;
+  transition: 0.2s ease-in-out;
+  border: none;
+}
+.safty {
+  height: 100vh;
+  width: 99%;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 20px;
+  background-color: gray;
+}
+.safty {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-image: url("https://nuro.imgix.net/Safety_landscape.jpg?w=1920&fit=max&auto=format&q=45");
+}
+.saftyy {
+  padding-top: 50px;
+  padding-left: 40px;
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+  font-family: Suisse, sans-serif;
+}
+.safty2 {
+  padding-left: 40px;
+  font-weight: normal;
+  color: white;
+  margin-top: -10px;
+  font-family: Suisse, sans-serif;
+}
+.exx {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+  font-family: Suisse, sans-serif !important;
+  margin-left: 40px;
+  color: black;
+  background-color: white;
+}
+.exx:hover {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+  font-family: Suisse, sans-serif !important;
+  margin-left: 40px;
+  color: white;
+  background-color: blue;
+  transition: 0.3s ease-in-out;
+}
+.truck {
+  margin-top: 50px !important;
+  background-image: url("assets/a/asset\ 10.jpeg");
+  background-color: navajowhite;
+  height: 500px;
+}
+.truck h1 {
+  color: black;
+  font-family: Suisse, sans-serif;
+}
+.truck p {
+  color: black;
+  font-family: Suisse, sans-serif;
+}
+.truck .exx {
+  color: white;
+  font-size: 18px;
+  background-color: black;
+  font-family: Suisse, sans-serif;
+}
+.truck .exx:hover {
+  color: white;
+  font-size: 18px;
+  background-color: blue;
+  font-family: Suisse, sans-serif;
+}
+.bring {
+  margin-top: 50px !important;
+  background-image: url("assets/a/asset\ 12.jpeg");
+  background-color: navajowhite;
+  height: 400px;
+}
+.news h1 {
+  padding-top: 20px;
+  padding-left: 50px;
+  font-size: 50px !important;
+  font-weight: 100 !important;
+  font-family: Suisse, sans-serif !important;
+}
+.first img {
+  height: 270px;
+  width: 270px;
+  border-radius: 30px;
+}
+
+.first {
+  height: 270px;
+  margin-left: 20px;
+
+  width: 270px;
+}
+h3 {
+  padding-left: 10px;
+}
+.first h2 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Suisse, sans-serif !important;
+}
+.news-cards {
+  display: flex;
+  gap: 20px;
+}
+.explore-more {
+  margin-top: 200px;
+}
+.current {
+  height: 600px;
+  width: 350px;
+  margin-left: 20px;
+  border-radius: 30px;
+  background-color: #f8f1d4;
+}
+.current h1 {
+  width: 300px;
+  padding-top: 30px;
+  padding-left: 20px;
+  font-size: 30px !important;
+  font-weight: 100 !important;
+  font-family: Suisse, sans-serif !important;
+}
+.current h2 {
+  width: 300px;
+  margin-top: -15px;
+  color: blue;
+  padding-left: 20px;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  font-family: Suisse, sans-serif !important;
+}
+.border {
+  margin-top: 30px !important;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 250px;
+  height: 380px;
+  margin: auto;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+.border h1 {
+  margin-top: -10px;
+  font-size: 14px !important;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.border h2 {
+  margin-top: 0px;
+  font-size: 14px !important;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.bor span {
+  display: none; /* Initially hide the arrow icon */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+.bor:hover span {
+  display: inline-block; /* Show the icon on hover */
+  opacity: 1;
+  transform: translateX(10px); /* Move the icon to the right */
+}
+
+.bor {
+  transition: transform 0.5s ease; /* Move the entire h1 content */
+}
+
+.bor:hover {
+  transform: translateX(10px); /* Move the whole h1 content */
+}
+.man {
+  border-bottom: none !important;
+}
+.mam {
+  margin-left: 20px;
+  height: 600px;
+  width: 600px;
+  border-radius: 30px;
+}
+.mam {
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://nuro.imgix.net/Large_2024-09-04-073300_hdoh.jpg?w=1024&fit=max&auto=format&q=45");
+}
+.mam h1 {
+  padding-top: 20px;
+  color: white;
+  padding-left: 30px;
+  font-size: 33px !important;
+  font-weight: 500 !important;
+  font-family: Suisse, sans-serif !important;
+}
+.mam h2 {
+  margin-top: -10px;
+  color: white;
+  padding-left: 30px;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  font-family: Suisse, sans-serif !important;
+}
+.mam button {
+  margin-top: 370px;
+  color: black !important
+  ;
+  font-family: Suisse, sans-serif !important;
+  background-color: white !important;
+}
+.txt {
+  width: 270px !important;
+  border-radius: 30px;
+  margin-left: 10px;
+  background-color: #f7f7f5;
+}
+.txt h1 {
+  width: 230px;
+  padding-top: 20px !important;
+  padding-left: 20px;
+  font-family: Suisse, sans-serif !important;
+  border-radius: 30px;
+  margin-left: 10px;
+  font-weight: normal;
+  font-size: 25px;
+  background-color: #232323, opacity 10%;
+}
+.txt h2 {
+  width: 150px;
+  font-weight: normal;
+  font-family: Suisse, sans-serif !important;
+  padding-left: 20px;
+  border-radius: 30px;
+  margin-left: 10px;
+  color: blue;
+  font-size: 10px;
+  background-color: #232323, opacity 10%;
+}
+.txt button {
+  margin-top: 200px;
+  font-family: Suisse, sans-serif !important;
+}
+.explore {
+  margin-top: 100px;
+}
+.ree {
+  background-color: #f7f7f5;
+  height: 500px;
+}
+.borderr {
+  margin-top: 30px !important;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 230px;
+  height: 250px !important;
+  margin: auto;
+  overflow: hidden;
+}
+.r {
+  margin-top: 310px !important;
+}
+.youu {
+  height: 500px;
+}
+.youu button {
+  margin-top: 270px;
+}
+
+.re h1 {
+  padding-top: 10px !important;
+  padding-left: 0px;
+  font-family: Suisse, sans-serif !important;
+  border-radius: 30px;
+  margin-left: 40px;
+
+  font-weight: normal;
+  color: white;
+  font-size: 68px;
+}
+.re h2 {
+  padding-left: 15px;
+  font-family: Suisse, sans-serif !important;
+  border-radius: 30px;
+  margin-left: 40px;
+  color: blue !important;
+  font-weight: normal;
+  color: white;
+  font-size: 13px;
+  margin-top: -40px;
+}
+.re {
+  background-color: black;
+  height: 500px;
+}
+.re p {
+  padding-top: 200px !important;
+  padding-left: 0px;
+  font-family: Suisse, sans-serif !important;
+  border-radius: 30px;
+  margin-left: 10px;
+
+  font-weight: normal;
+  color: white;
+  font-size: 28px;
+}
+.youu {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  width: 570px;
+  margin-left: 20px;
+  height: 500px; /* Set height for the container */
+}
+.youu h1 {
+  padding-top: 10px !important;
+  padding-left: 0px;
+  font-family: Suisse, sans-serif !important;
+  border-radius: 30px;
+  margin-left: 40px;
+
+  font-weight: normal;
+  color: white;
+  font-size: 38px;
+}
+.youu h2 {
+  padding-top: 10px !important;
+  padding-left: 0px;
+  font-family: Suisse, sans-serif !important;
+  border-radius: 30px;
+  margin-top: -20px;
+  margin-left: 40px;
+  font-weight: 400;
+  color: blue !important;
+  font-size: 15px;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Place the video behind the content */
+}
+.aman {
+  border-radius: 30px;
+  background-color: black;
+}
+.footer {
+  height: 100vh;
+  color: white;
+  display: flex;
+  margin-top: 100px;
+
+  border-radius: 30px;
+}
+.footer-child:nth-child(3) {
+  margin-left: 250px !important;
+}
+.footer-child {
+  padding-top: 50px;
+
+  font-weight: 100;
+  padding-left: 10px;
+}
+
+.footer-child h1 {
+  font-size: 20px;
+  font-family: Suisse, sans-serif !important;
+  font-weight: normal;
+  padding-left: 50px;
+}
+.t::placeholder {
+  color: white; /* Placeholder text color */
+  padding-left: 10px; /* Adds padding to the left of the placeholder text */
+}
+.submit {
+  margin-top: -45px;
+  font-size: 15px;
+  margin-left: 430px;
+}
+.submit:hover {
+  margin-top: -45px;
+  font-size: 15px;
+  background-color: blue !important;
+  color: white !important;
+  margin-left: 430px; /* Optionally changes the cursor to indicate no action */
+}
+.lo {
+  height: 60px;
+  width: 60px;
+  margin-left: 30px;
+  margin-top: 45px;
+}
+.footer-child h1:hover {
+  transition: 0.2s ease-in-out;
+  transform: translateX(10px); /* Move content 10px to the right on hover */
+}
+.loader {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  position: fixed;
+  background-color: black;
+  display: flex;
+  color: #fff;
+  margin-left: -2px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-left: 0px;
+  padding-top: 0px;
+  z-index: 99;
+}
+.loader h3 {
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 430px) and (max-height: 932px) {
+  /* Your CSS styles go here */
+
+  .video video {
+    height: 570px;
+    border-radius: 30px;
+    width: 278vw;
+    object-fit: cover;
+    position: absolute;
+  }
+  .monu {
+    width: 194px !important;
+    height: 100px !important;
+    border-radius: 30px;
+    width: 278vw;
+    object-fit: cover;
+    position: absolute;
+  }
+  .card .dave {
+    font-size: 16px;
+    margin-top: 153px;
+    font-family: Suisse, sans-serif;
+    padding-left: 12px;
+    text-align: start;
+  }
+  .card .fa-solid {
+    font-size: 9px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 52%;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 0.6s ease-in-out;
+  }
+  .gsap {
+    margin-top: 20px !important;
+    margin-left: 10px;
+    order: 0;
+    place-self: auto;
+    grid-area: auto;
+    z-index: auto;
+    float: none;
+    flex-shrink: 1;
+    display: flex;
+    inset: 0px auto auto 0px;
+    position: relative;
+    flex-basis: auto;
+    overflow: visible;
+    box-sizing: border-box;
+    width: 1190px;
+    height: 400px;
+    padding: 0px 0px 647px;
+  }
+  .gsap .gsap-video {
+    translate: none;
+    rotate: none;
+    scale: none;
+    border-radius: 30px;
+    transform: rotate(-40deg);
+    opacity: 0.5;
+    height: -20%;
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+  }
+  .pin-spacer {
+    order: 0;
+    place-self: auto;
+    grid-area: auto;
+    z-index: auto;
+    float: none;
+    flex-shrink: 1;
+    display: flex;
+    margin: 20px -786px 0px 10px;
+    inset: 0px;
+    position: relative;
+    flex-basis: auto;
+    overflow: visible;
+    box-sizing: border-box;
+    width: 1190px;
+    height: 41px !important;
+    padding: 0px 0px 694px;
+  }
+}
+.navabr {
+  display: flex;
+  transform: translateY(-100%); /* Start from above */
+  transition: transform 1s ease, opacity 1s ease !important;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+.menu {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.menu a {
+  text-decoration: none !important;
+  color: #ffffff !important;
+  font-size: 17px;
+  font-family: Suisse, sans-serif !important;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+.close-button {
+  font-size: 24px;
+  cursor: pointer;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+}
+.follow {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.follow a {
+  font-family: Suisse, sans-serif !important;
+  text-decoration: none !important;
+  color: #ffffff !important;
+  font-size: 18px;
+  display: block;
+
+  margin-top: 10px;
+}
+.news {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.news-text {
+  max-width: 70%;
+}
+.news-text p {
+  font-family: Suisse, sans-serif !important;
+  margin: 0;
+}
+.news-text .date {
+  font-size: 14px;
+  font-family: Suisse, sans-serif !important;
+  color: white !important;
+}
+.news-image {
+  width: 100px;
+  height: 100px;
+  background-image: url("https://placehold.co/100x100");
+  background-size: cover;
+  border-radius: 10px;
+}
+#toggle {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  inset: 0;
+  z-index: 999;
+  position: fixed;
+  display: none; /* Initially hidden */
+  opacity: 0;
+}
+
+/* Slide-down animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Apply slide-down keyframes */
+#toggle.slide-down {
+  animation: slideDown 1s ease forwards;
+}
+
+/* Apply slide-up keyframes */
+#toggle.slide-up {
+  animation: slideUp 1s ease forwards;
+}
+.slide:hover {
+  transform: translateX(10px);
+  transition: 0.2s ease-in-out;
+}
