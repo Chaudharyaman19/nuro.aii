@@ -945,11 +945,7 @@ h3 {
 
   margin-top: 10px;
 }
-.news {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
+
 .news-text {
   max-width: 70%;
 }
